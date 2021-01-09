@@ -15,7 +15,7 @@ const User = () => {
     loadUser();
   }, []);
   const loadUser = async () => {
-    const res = await axios.get(`http://localhost:3003/users/${id}`);
+    const res = await axios.get(`https://my-json-server.typicode.com/meet96/react-crud/users/${id}`);
     setUser(res.data);
   };
   return (

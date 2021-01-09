@@ -10,12 +10,12 @@ const Home = () => {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:3003/users");
+    const result = await axios.get("https://my-json-server.typicode.com/meet96/react-crud/users");
     setUser(result.data.reverse());
   };
 
   const deleteUser = async id => {
-    await axios.delete(`http://localhost:3003/users/${id}`);
+    await axios.delete(`https://my-json-server.typicode.com/meet96/react-crud/users/${id}`);
     loadUsers();
   };
 
