@@ -14,6 +14,7 @@ const About = () => {
         </p>
         <p className="lead">Hello</p>
     </div>
+    </div>
   );
 };
 
